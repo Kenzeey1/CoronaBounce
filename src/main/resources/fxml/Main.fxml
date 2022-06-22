@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="pane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/Main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="environment.application.MainController">
+   <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" spacing="30.0">
+      <padding>
+         <Insets bottom="60.0" left="60.0" right="60.0" top="60.0" />
+      </padding>
+      <Label text="~~~Corona Bounce~~~" textFill="#186b8f">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn1" mnemonicParsing="false" onAction="#switchSceneToCreateEnvironment" prefHeight="40.0" prefWidth="235.0" text="Create environment">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button fx:id="btn2" mnemonicParsing="false" onAction="#startSimulation" prefHeight="40.0" prefWidth="235.0" text="Start simulation">
+         <font>
+            <Font name="Serif Bold Italic" size="17.0" />
+         </font></Button>
+      <Button fx:id="btn3" mnemonicParsing="false" onAction="#showNotes" prefHeight="40.0" prefWidth="235.0" text="Show notes" textAlignment="CENTER" textFill="#0d0d0d">
+         <font>
+            <Font name="Serif Bold Italic" size="18.0" />
+         </font></Button>
+   </VBox>
+</AnchorPane>
+

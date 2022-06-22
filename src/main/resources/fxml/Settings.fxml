@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="pane" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/Settings.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="environment.application.SettingsController">
+    <TextField id="txtf" fx:id="porbaOfVirusInfection" layoutX="179.0" layoutY="67.0" />
+    <TextField id="txtf" fx:id="nbrPeople" layoutX="179.0" layoutY="148.0" />
+    <TextField id="txtf" fx:id="probaOfGettingSickWhenTravel" layoutX="179.0" layoutY="236.0" />
+    <Button layoutX="480.0" layoutY="309.0" mnemonicParsing="false" onAction="#verification" text="Start">
+        <font>
+            <Font name="System Bold Italic" size="18.0" />
+        </font>
+    </Button>
+    <Label layoutX="40.0" layoutY="44.0" text="- Probability of virus infection :">
+        <font>
+            <Font name="System Bold Italic" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="46.0" layoutY="124.0" text="- Number of people ( min 1, max 30 ) :">
+        <font>
+            <Font name="System Bold Italic" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="46.0" layoutY="210.0" text="- Probability of getting sick when travelling :">
+        <font>
+            <Font name="System Bold Italic" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="164.0" layoutY="71.0" text="1/">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="warning1" layoutX="111.0" layoutY="99.0" textFill="#ee0000">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+    </Label>
+    <Label fx:id="warning2" layoutX="184.0" layoutY="184.0" textFill="#f50000">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+    </Label>
+    <Label fx:id="warning3" layoutX="119.0" layoutY="270.0" textFill="RED">
+        <font>
+            <Font name="System Bold" size="13.0" />
+        </font>
+    </Label>
+    <Label layoutX="164.0" layoutY="240.0" text="1/">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="warning4" layoutX="146.0" layoutY="365.0" textFill="RED">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label layoutX="46.0" layoutY="286.0" text="- Probability of travel :">
+        <font>
+            <Font name="System Bold Italic" size="14.0" />
+        </font>
+    </Label>
+    <TextField id="txtf" fx:id="probaOfTravel" layoutX="179.0" layoutY="312.0" />
+    <Label layoutX="164.0" layoutY="316.0" text="1/">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+    <Label fx:id="warning5" layoutX="122.0" layoutY="340.0" textFill="RED">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Label>
+</AnchorPane>

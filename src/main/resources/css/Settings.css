@@ -1,0 +1,26 @@
+#pane{
+    -fx-background-color:#2eb4e1;
+}
+
+#txtf:hover {
+  -fx-effect: innershadow(gaussian, blue, 15, 0, 0, 0);
+  -fx-border-color:black;
+}
+
+.button {
+    -fx-background-color: white, white;
+    -fx-background-radius: 16.4, 15;
+    -fx-background-insets: -1.4, 0;
+    -fx-border-radius: 15;
+    -fx-border-width: 2;
+    -fx-border-color: dimgrey;
+}
+
+.button:hover{
+    -fx-effect: innershadow(gaussian, blue, 15, 0, 0, 0);
+}
+
+.button:pressed {
+    -fx-effect: innershadow(gaussian, green, 15, 0, 0, 0);
+    -fx-background-color: green;
+}

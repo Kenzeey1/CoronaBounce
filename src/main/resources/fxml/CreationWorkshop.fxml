@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="800.0"
+            stylesheets="@../css/CreationWorkshop.css" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="creation.CreationWorkshopController">
+    <VBox fx:id="vbox" prefHeight="41.0" prefWidth="800.0" spacing="5.0">
+        <ToolBar prefHeight="38.0" prefWidth="800.0">
+            <VBox.margin>
+                <Insets left="10.0"/>
+            </VBox.margin>
+            <Button mnemonicParsing="false" onAction="#addRectangle" text="Add rectangle"/>
+            <Button mnemonicParsing="false" onAction="#addCircle" text="Add circle"/>
+            <Button layoutX="124.0" layoutY="14.0" mnemonicParsing="false" onAction="#addEllipse"
+                    text="Add ellipse"/>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#Save"
+                    prefHeight="33.0" prefWidth="160.0" text="Save" textAlignment="CENTER" textFill="#ff0d00">
+                <font>
+                    <Font name="System Bold Italic" size="18.0"/>
+                </font>
+            </Button>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goBack"
+                    prefHeight="33.0" prefWidth="160.0" text="Back">
+                <font>
+                    <Font name="System Bold Italic" size="18.0"/>
+                </font>
+            </Button>
+        </ToolBar>
+        <HBox prefHeight="28.0" prefWidth="600.0" spacing="9.0">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+            <padding>
+                <Insets left="3.0"/>
+            </padding>
+            <TextField fx:id="widthRecTF" prefHeight="26.0" prefWidth="75.0" promptText="largeur rec">
+                <font>
+                    <Font size="10.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="heightRecTF" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="75.0"
+                       promptText="longeur rec">
+                <font>
+                    <Font size="10.0"/>
+                </font>
+            </TextField>
+            <TextField fx:id="radiusTF" layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="75.0"
+                       promptText="rayon"/>
+        </HBox>
+    </VBox>
+</AnchorPane>
