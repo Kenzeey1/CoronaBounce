@@ -26,14 +26,8 @@ Cet outil :
 
  ### sur un terminal :
 
- 1. cloner le répertoire :
-     ```
-    git clone https://gaufre.informatique.univ-paris-diderot.fr/verhaegh/Projet-info-s4.git
-    ```
+1. cloner le répertoire :
 2. Enter dans le dossier du projet :
-    ```
-    cd Projet-info-s4
-    ```
 4. exécutez le wrapper gradle (il téléchargera toutes les dépendances, y compris gradle lui-même) :
     ```
     ./gradlew build
@@ -42,16 +36,6 @@ Cet outil :
     ```
     ./gradlew run
     ```
-
-
- ### sur eclipse :
-
- 1. File -> Import -> Gradle -> Existing Gradle Project -> Next -> Selectionner le répertoire du projet -> Finish -> Run Configurations -> Gradle Task -> Projet-info-s4 -> application -> run
-
-
- ### sur intelliJ :
-
- 1. Open -> Selectionner le répertoire du projet -> Tasks -> application -> run
 
 ## Participants au projet :
     ABDELLATIF Kenzi : k.abdellatif03@gmail.com
